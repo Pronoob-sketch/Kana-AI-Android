@@ -40793,10 +40793,10 @@ var require_main = __commonJS({
     async function loadFirstAnimation() {
       try {
         showDebug("Loading animation 01...");
-        const gltf = await loader.loadAsync("./animations/VRMA_01.vrma");
+        const gltf = await loader.loadAsync("./animations/VRMA_07.vrma");
         const animation = gltf.userData.vrmAnimations?.[0];
         if (!animation) {
-          throw new Error("No VRM animation found inside VRMA_01");
+          throw new Error("No VRM animation found inside VRMA_04");
         }
         const clip = createVRMAnimationClip(animation, vrm);
         mixer = new AnimationMixer(vrm.scene);
